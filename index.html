@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" ></script>
+  
+  <title>SDG Goal 6 - Clean Water and Sanitation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar img {
+      height: 50px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #4daff0;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #0056b3;
+    }
+
+    .navbar .join-btn {
+      padding: 8px 20px;
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar .join-btn:hover {
+      background-color: #333;
+    }
+
+    /* Main Banner */
+    .banner {
+      text-align: center;
+      background-color: #63b3ed;
+      color: rgb(15, 14, 14);
+      padding: 50px 60px;
+      
+background: #4daff0;
+background-size: cover;
+font-weight: 100;
+
+
+    }
+
+    .banner h1 {
+      font-size: 8rem;
+      margin: 0;
+      font-weight: bold;
+      color: black;
+    }
+
+    .banner h2 {
+      font-size: 3rem;
+      margin: 10px 0 20px;
+      font-weight: bold;
+      color:black;
+    }
+
+    .banner p {
+      font-size: 1.5rem;
+      font-style:normal;
+      margin: 0;
+      color: black;
+    }
+
+
+    h1 {
+      text-align: center;
+      color: 4daff0;
+      margin: 20px 0;
+      color:#4daff0;
+    }
+
+    .containercard {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      max-width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    .card {
+      flex: 0 0 25%; /* Each card takes 25% of the row width */
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-width: 300px; /* Ensure a minimum width */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #4daff0;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: 4daff0;
+    }
+
+    .card p {
+      padding: 10px 15px 20px;
+      font-size: 0.95rem;
+      color: 4daff0;
+      line-height: 1.5;
+    }
+
+    /* For horizontal scrolling indicator */
+    .containercard::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .containercard::-webkit-scrollbar-thumb {
+      background: #4daff0;
+      border-radius: 5px;
+    }
+
+    .containercard::-webkit-scrollbar-track {
+      background: #f4f4f4;
+    }
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+  
+
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <img src="logo1.png" alt="Logo" width="100" height="150">
+    <ul>
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">Impact</a></li>
+      <li><a href="#section3">Indian Initiatives</a></li>
+    </ul>
+    <a href="#join" class="join-btn">21MIS1090</a>
+  </nav>
+
+  <!-- Main Banner -->
+   <section class="home" id="section1">
+  <div class="banner">
+    <h1>SDG GOAL 6</h1>
+    <h2>Clean Water and Sanitation</h2>
+    <p>"Sanitation for All, Health for All!"</p>
+  </div>
+</section>
+<section class="cards" id="section2">
+  <h1>Big Impact of Sanitation and clean water</h1>
+  <div class="containercard">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="featured1.jpg" alt="Save Water at Home">
+      <h3>Save Water at Home</h3>
+      <p>Turn off the tap while brushing your teeth or washing dishes to save up to 10 liters of water per minute. Fix leaks immediately to conserve resources.</p>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="featured2.jpg" alt="Reuse Water">
+      <h3>Reuse Water</h3>
+      <p>Reuse greywater from washing machines or basins to water plants or clean outdoor spaces. Every drop reused is a step towards sustainability.
+        Water reuse, also known as water recycling or reclamation, is the process of treating and reusing water from various sources
+      </p>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="featured3.jpg" alt="Protect Water Sources">
+      <h3>Protect Water Sources</h3>
+      <p>Avoid disposing of chemicals and plastics in water bodies. Join community clean-ups to preserve the purity of local rivers and lakes.
+        Conserve water: Use less water by taking shorter showers, fixing leaks, and installing water-saving devices. 
+Reduce pollution: Use fewer fertilizers and pesticides, and dispose of hazardous products properly. 
+      </p>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="featured4.png" alt="Water-Saving Technology">
+      <h3>Adopt Water-Saving Technology</h3>
+      <p>Install low-flow showerheads and dual-flush toilets. Use water-efficient appliances to reduce your water footprint.
+        Implementing rainwater harvesting and greywater recycling systems. And, start embracing sustainable landscaping practices, we can significantly impact water conservation. Government policies and financial incentives further encourage businesses and individuals to adopt water-saving technologies and practices.
+      </p>
+    </div>
+  </div>
+
+</section>
+<section class="initiatives" id="section3">
+  <h1>
+    <h1>India's Water and Sanitation Initiatives</h1>
+  </h1>
+  <main class="container">
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="image">
+        <img src="in1.jpg" alt="Swachh Bharat Mission">
+      </div>
+      <div class="content">
+        <h2>Swachh Bharat Mission</h2>
+        <p>Launched in 2014, the Swachh Bharat Mission aimed to make India open defecation-free. Over 110 million toilets were constructed, improving health and hygiene across the nation.</p>
+        <p>Launched: October 2, 2014
+          Objective: To achieve universal sanitation coverage and eliminate open defecation.
+          <br>
+          <p>Achievements:</p>
+          
+          Declared India open defecation-free (ODF) in 2019.
+          Constructed over 110 million toilets in rural and urban areas.
+          Promoted behavioral change with awareness campaigns to instill the importance of hygiene.
+          Implemented initiatives for sustainable solid and liquid waste management.
+          <br>
+          <p>Impact:</p>
+          
+          Improved health outcomes with a decline in waterborne diseases.
+          Enhanced dignity and safety for women, especially in rural areas.
+          Positive environmental effects, including reduced contamination of water sources.</p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section reverse">
+      <div class="image">
+        <img src="in2.jpg" alt="Jal Jeevan Mission">
+      </div>
+      <div class="content">
+        <h2>Jal Jeevan Mission</h2>
+        <p>Started in 2019, Jal Jeevan Mission focuses on providing functional household tap connections to every rural household by 2024, ensuring access to safe drinking water.</p>
+        <br>
+        <p>
+          Launched: August 15, 2019
+          Objective: To provide functional household tap connections (FHTCs) to every rural household by 2024.
+          <br>
+          <P>Features:
+            Focus on water quality monitoring and testing to ensure safe drinking water.
+            Promotes community participation in managing water resources.
+            Integration with rainwater harvesting and groundwater recharge systems.<br></P>
+
+          <p>Achievements (as of 2025):</p>
+          Over 12 crore households now have tap water connections.
+        Reduced the burden on women and girls who earlier had to fetch water from long distances.<br>
+          <p><strong>How does the JJM work? </strong><br>
+            The program involves a community approach to water
+            It involves information, education, and communication
+            It involves source sustainability measures
+            It involves a jan andolan for water</p>
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="image">
+        <img src="in31.jpg" alt="Namami Gange Program">
+      </div>
+      <div class="content">
+        <h2>Namami Gange Program</h2>
+        <p>The Namami Gange Program, launched in 2014, works to rejuvenate the Ganga River by improving wastewater management and reducing pollution levels.</p>
+        <P>Launched: 2014<br>
+          <strong>Objective:</strong> To rejuvenate the Ganga River, India’s lifeline, by addressing pollution and improving sanitation in riverine communities.<br>
+          
+         <strong> Key Components:</strong>
+          
+          Infrastructure development for sewage treatment plants (STPs).<br>
+          Promotion of sustainable agriculture and afforestation in the Ganga basin.<br>
+          Public engagement through the “Ganga Task Force.”<br>
+          
+          <Strong>Results:</Strong>
+          
+          Reduction in Ganga’s pollution levels, with stretches of the river now meeting bathing standards.
+          Treated over 4,800 MLD (million liters per day) of sewage through new and upgraded STPs.</P>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+      <!-- Section 2 -->
+      <div class="section reverse">
+        <div class="image">
+          <img src="in4.jpg" alt="Jal Jeevan Mission">
+        </div>
+        <div class="content">
+          <h2>Atal Bhujal Yojana (ABY) – Groundwater Management</h2>
+          
+          <p>
+            Launched: December 25, 2019<br>
+            Budget: ₹6,000 Crore (co-funded by the World Bank and the Government of India)<br>
+            Coverage: 7 states - Gujarat, Haryana, Karnataka, Madhya Pradesh, Maharashtra, Rajasthan, and Uttar Pradesh.<br>
+            Objective: Address groundwater depletion and ensure sustainable groundwater management through community participation.
+  <br>
+  <P>Key Strategies:
+
+    <br>Village-Level Water Budgeting: Communities assess water availability and demand.
+    <br>Efficient Irrigation: Promotes drip and sprinkler systems to reduce water wastage.
+    <br>Water Conservation: Desilting tanks, pond restoration, and check dam construction.
+    <br>Monitoring Tools: Use of GIS, remote sensing, and data sharing.
+    <br>Community Training: Involves locals, especially women, in water conservation.<br></P>
+  
+  <P>Achievements:
+  Groundwater recharge projects have improved water availability.
+  Farmers using micro-irrigation report less water usage and higher productivity.
+  Awareness campaigns foster community responsibility for water resources.<br></P>
+
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+</body>
+</html>
